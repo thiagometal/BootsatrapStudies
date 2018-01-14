@@ -1,0 +1,249 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 320px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    min-height: 320px;
+    line-height: 100%;
+    /* Vertically center the text there */
+    background-color: #ffffff;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+
+/* Not required for template or sticky footer method. */
+
+body > .container {
+    padding: 0px 15px 80px;
+}
+
+.distancia-menu {
+    padding-top:150px !important; 
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    line-height: 180%;
+    font-size: 18px;
+    color: #000;
+}
+
+p.p-home {
+    margin-top: 30px;
+}
+
+.img-home {
+    background-image: url("../img/bg_home.jpg");
+    height: 600px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    background-position: bottom;
+}
+
+.centraliza{
+    margin-top: 200px;
+}
+
+.text-home {
+    background-color: white;
+    font-size: 48px;
+    padding: 30px;
+    max-width: 520px;
+    opacity: 0.8;
+}
+
+code {
+    font-size: 80%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.logo {
+    width: 82px;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+footer .navbar-nav .nav-item .nav-link {
+    text-decoration: none;
+    line-height: 35px;
+    color: black;
+    font-size: 18px;
+}
+
+footer .row {
+    padding: 20px;
+    border-top: 1px solid rgb(204, 204, 204);
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+
+footer .divisao {
+    border-left: 1px solid rgb(204, 204, 204);
+}
+
+footer img.logo {
+    margin-top: 30px;
+}
+
+.footer-telefone {
+    background-color: rgb(250, 250, 250);
+    border: solid 1px rgb(205, 205, 205);
+    color: rgb(197, 197, 197);
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-telefone span {
+    color: rgb(70, 70, 70);
+    font-size: 32px;
+}
+
+.footer-telefone div {
+    width: 244px;
+    margin: auto;
+}
+
+/* Página Contato */
+h1 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contato-destaque h3 {
+    color: rgb(84, 84, 84);
+    font-weight: bold;
+}
+
+.contato-destaque p {
+    font-size: 36px;
+}
+
+.contato-horario, .contato-horario h3, contato-horario p {
+    font-size: 24px;
+}
+
+.contato-horario h3 {
+    font-weight: bold;
+    color: black;
+}
+
+.contato-horario p {
+    color:rgb(120, 120, 120);
+}
+
+/* Formulário */
+.container-form-contato {
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+.container-form-contato textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.container-form-contato textarea, 
+.container-form-contato input[type=email],
+.container-form-contato input[type=text] {
+    background-color: rgb(246, 246, 246);
+    padding: 20px;
+    border: 1px solid rgb(220, 220, 220);
+    color: rgb(202, 202, 202);
+}
+
+.container-form-contato input[type=email],
+.container-form-contato input[type=text] {
+    width:250px;
+}
+
+.container-form-contato input[type=email] {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.container-form-contato input[type=submit] {
+    color:white;
+    background-color: rgb(229, 181, 83);
+    border:none;
+    padding:20px 35px;
+}
+
+/* Tablete */
+@media (min-width: 768px) and (max-width: 992px) {
+    .nav > li > a {
+        font-size: 12px;
+    }
+    body {
+        margin-bottom: 600px;
+    }
+    footer {
+        height: 600px !important;
+    }
+    .contato-destaque p {
+        font-size: 24px;
+    }
+    .container-form-contato input[type=email],
+    .container-form-contato input[type=text] {
+        width: 200px;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+    .contato-destaque p {
+        font-size: 18px;
+    }
+    .container_form_contato input[type=text], 
+    .container_form_contato input[type=email] {
+        width: 100%;
+    }
+    .container_form_contato input[type=email] {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+/* Desktop Medio */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container_form_contato input[type=text], 
+    .container_form_contato input[type=email] {
+        width: 215px;
+    }
+}
